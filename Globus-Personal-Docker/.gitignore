@@ -1,0 +1,4 @@
+/config/*
+/data/*
+*.conf
+/globusconnectpersonal-3.2.8/

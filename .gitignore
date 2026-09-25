@@ -1,0 +1,16 @@
+# Python cache & build outputs
+__pycache__/
+*.pyc
+*.h5
+*.nxs
+*.png
+
+# Data mounts & temp folders
+docker/data/
+docker/temp_setup_data/
+
+# Local active configs / credentials
+config.json
+project_config.json
+
+microflow_server/

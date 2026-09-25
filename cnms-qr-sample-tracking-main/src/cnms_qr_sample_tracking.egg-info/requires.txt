@@ -1,0 +1,15 @@
+datafed
+globus-sdk
+h5py
+numpy
+Pillow
+PyQt5
+pywin32
+qrcode[pil]
+sea-sand
+
+[:platform_system != "Windows"]
+PyQt5-Qt5==5.15.18
+
+[:platform_system == "Windows"]
+PyQt5-Qt5==5.15.2

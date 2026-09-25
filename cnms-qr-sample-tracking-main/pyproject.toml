@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnms-qr-sample-tracking"
+version = "0.2.0"
+description = "PyQt desktop app for CNMS QR label generation and sample data upload"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+authors = [
+  { name = "CNMS" }
+]
+dependencies = [
+  "datafed",
+  "globus-sdk",
+  "h5py",
+  "numpy",
+  "Pillow",
+  "PyQt5",
+  "PyQt5-Qt5==5.15.2; platform_system == 'Windows'",
+  "PyQt5-Qt5==5.15.18; platform_system != 'Windows'",
+  "pywin32",
+  "qrcode[pil]",
+  "sea-sand"
+]
+
+[project.scripts]
+cnms-qr-sample-tracking = "cnms_qr_sample_tracking.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv.sources]
+sea-sand = { path = "../sea-sand", editable = true }

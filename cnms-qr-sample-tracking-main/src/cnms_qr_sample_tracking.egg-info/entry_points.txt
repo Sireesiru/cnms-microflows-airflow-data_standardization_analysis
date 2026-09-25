@@ -1,0 +1,2 @@
+[console_scripts]
+cnms-qr-sample-tracking = cnms_qr_sample_tracking.app:main
