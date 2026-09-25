@@ -1,7 +1,8 @@
 # cnms-MicroFlows-airflow-data_standardization_analysis.
 #Orchestration, pipeline scripts, and environment setups for standardizing and uploading CNMS microflows data (GWY, MRC, CZI) to DataFed.
-
 ---
+## Overview
+This repository provides an **Airflow-orchestrated workflow for automated microscopy data processing and analysis at CNMS**. It connects instrument-generated data with Globus-accessible staging,HDF5 standardization of multimodal datasets,data and metadata upload and management, automated downstream AI/ML image analysis, quantitative feature extraction, and interactive visualization apps. The workflow is designed for continuous operation on the CNMS MicroFlows virtual machine, including integration with network-restricted instrument environments.
 
 **Airflow Persistent Background Execution:** Apache Airflow is deployed as a persistent background service using systemd, on CNMS cloud hosted virtual machine-MicroFlows. This configures Airflow scheduler and webserver to start automatically and remain active independent of user login or terminal sessions. This enables continuous monitoring and orchestration of the data pipeline without requiring manual restart or an active SSH/PuTTY connection.
 
